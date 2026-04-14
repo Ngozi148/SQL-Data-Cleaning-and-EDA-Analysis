@@ -1,12 +1,12 @@
-#SQL DATA CLEANING AND EXPLORATORY ANALYSIS(GLOBAL LAYOFFS)
+# SQL DATA CLEANING AND EXPLORATORY ANALYSIS(GLOBAL LAYOFFS)
 
 
-##PROJECT OVERVIEW
+## PROJECT OVERVIEW
 
 This project involved a comprehensive end-to-end dataset using MYSQL. I took a raw, "dirty" dataset containing global tech layoffs(2020-2023) and performed extensive cleaning to ensure data integrity. Following the cleaning phase, I conducted an Exploratory Data Analysis(EDA) to uncover trends regarding which industries, companies, and periods were most affected by the economic shift.
 
 
-##Phase 1: Data Cleaning
+## Phase 1: Data Cleaning
 
 The goal was to transform the raw data into a reliable format for analysis.
 
@@ -22,7 +22,7 @@ Handling Nulls and Missing Values: Used a Self-Join to populate missing values. 
  I dropped the helper row_num column used during cleaning to finalize the production table.
 
 
-##Phase 2: Exploratory Data Analysis
+## Phase 2: Exploratory Data Analysis
 
 With a clean dataset, I explored the numbers to find the "story" behind the layoffs.
 
