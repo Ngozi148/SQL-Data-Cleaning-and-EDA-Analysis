@@ -21,6 +21,10 @@ Standardization: Trimmed whitespace and removed trailing punctuation(e.g., fixin
 Handling Nulls and Missing Values: Used a Self-Join to populate missing values. In the dataset, one entry for "Airbnb" had a category and another was blank, I mapped the correct data to the empty record.
  I dropped the helper row_num column used during cleaning to finalize the production table.
 
+<img width="846" height="338" alt="Screenshot Data Cleaning" src="https://github.com/user-attachments/assets/5ccf5cc2-f729-44e8-968c-c0cbbef573d9" />
+
+
+
 
 ## Phase 2: Exploratory Data Analysis
 
@@ -35,6 +39,10 @@ Time-Series Trends: Extracted the month and year using SUBSTRING.
       Calculated a Rolling Total of layoffs by month to visualize the speed at which job losses accelerated.
 
 Top 5 Yearly Rankings: Used a CTE AND DENSE_RANK() to identify the top 5 companies with the most layoffs for each year. I chose DENSE_RANK () over a standard RANK() to ensure that companies with identical layoffs counts received the same rank without skipping the next consecutive number in the sequence. By wrapping this in a CTE(Common Table Expression), I was able to perform a subquery like filter on the ranked results to isolate only the top 5 records per year.
+
+
+<img width="221" height="340" alt="Screenshot 2026-04-13 010500 EDA" src="https://github.com/user-attachments/assets/fc457351-26bb-40fc-9a92-49b470fef194" />
+
 
 
 SKILLS: Data Cleaning, Join Logic, CTEs(Common Table Expressions), Window Functions, String Manipulation.
